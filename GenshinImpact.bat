@@ -73,6 +73,7 @@ echo   1. 3840 x 2160 (16:9)     5. 1280 x 720 (16:9)
 echo   2. 2560 x 1440 (16:9)     6. 1024 x 576 (16:9)
 echo   3. 1920 x 1080 (16:9)     7. 960 x 540 (16:9)
 echo   4. 1366 x 768 (16:9)      8. 854 x 480 (16:9)
+echo   9. 960 x 1080 (16:9)
 echo.
 echo   0. Back
 echo.
@@ -125,6 +126,12 @@ if "%i%" == "8" (
 	set "i="
 	set "screenWidth=854"
 	set "screenHeight=480"
+	goto main
+)
+if "%i%" == "9" (
+	set "i="
+	set "screenWidth=960"
+	set "screenHeight=1080"
 	goto main
 )
 if "%i%" == "0" (
